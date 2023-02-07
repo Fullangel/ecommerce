@@ -22,7 +22,7 @@ export const StateContext = ({ children }) => {
         if(checkProductInCart){
             const updateCartItems = cartItems.map((cartProduct) => {
                 if (cartProduct._id === product._id) return {
-                    ...cartPoduct,
+                    ...cartProduct,
                     quantity: cartProduct.quantity + quantity
                 } 
             })
